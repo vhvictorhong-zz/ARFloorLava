@@ -48,7 +48,7 @@ class ViewController: UIViewController, ARSCNViewDelegate {
         guard let planeAnchor = anchor as? ARPlaneAnchor else {return}
         let lavaNode = createLava(planeAnchor: planeAnchor)
         node.addChildNode(lavaNode)
-                
+        
     }
     
     func renderer(_ renderer: SCNSceneRenderer, didUpdate node: SCNNode, for anchor: ARAnchor) {
